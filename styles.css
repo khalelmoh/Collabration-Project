@@ -303,6 +303,8 @@ img {
     text-align: center;
 }
 
+/* Start of Problme Solution  */
+
 .problem-solution {
     padding: 80px 0;
     background-color: #f9fafb;
@@ -384,6 +386,69 @@ img {
     background-color: #43a047;
   }
 
+
+
+/* End of Problme Solution */
+
+/* Start of Why Choose us Section */
+
+.why-choose-us {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #1f2933;
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Grid */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Cards */
+.why-card {
+  padding: 32px 24px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.why-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  color: #2e7d32;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* End of Why choose us section  */
 
 .about-grid {
     display: grid;
