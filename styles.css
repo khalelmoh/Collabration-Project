@@ -32,6 +32,10 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
 }
+#home{
+     background: url("https://media.istockphoto.com/id/2253086000/photo/nutritionist-with-apple-and-fruits.jpg?s=612x612&w=0&k=20&c=ae2xKbt3pXC3WcRHEf9STkDwib0d6lKDUgNCOLjw0zw=") center center / cover no-repeat;
+     background-color: var(--background-light);
+}
 
 h1,
 h2,
@@ -236,14 +240,20 @@ img {
     z-index: 0;
 }
 
+.home{
+
+     background: url("https://media.istockphoto.com/id/1044382390/photo/beautiful-young-nutritionist-working-at-desk-and-writing-medical-records-over-fresh-fruit-in.jpg?s=612x612&w=0&k=20&c=FCt26o3TW-AdKWH7U2J93pBvjJjqCzc_uV0xk6bsJgw=") center / cover no-repeat;
+  
+}
+
 
 
 .hero-content {
     position: relative;
     z-index: 2;
     max-width: 600px;
-    margin-left: 0;
-    
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-tagline {
@@ -254,12 +264,14 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     color: var(--text-dark);
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .hero .highlight {
@@ -290,6 +302,87 @@ img {
     margin: 0 auto;
     text-align: center;
 }
+
+.problem-solution {
+    padding: 80px 0;
+    background-color: #f9fafb;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .problem-solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  /* Problems */
+  .problems h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1f2933;
+  }
+  
+  .problems ul {
+    list-style: none;
+  }
+  
+  .problems li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-left: 28px;
+    position: relative;
+    color: #4b5563;
+  }
+  
+  .problems li::before {
+    content: "✖";
+    position: absolute;
+    left: 0;
+    color: #e11d48;
+    font-weight: bold;
+  }
+  
+  /* Solution Card */
+  .solution {
+    background-color: #e8f5e9;
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .solution h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+  }
+  
+  .solution p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: #374151;
+    line-height: 1.6;
+  }
+  
+  /* Button */
+  .btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #43a047;
+  }
 
 
 .about-grid {
@@ -435,6 +528,9 @@ img {
 }
 
 @media (max-width: 768px) {
+    
+
+
     .why-choose-grid {
         grid-template-columns: 1fr;
     }
@@ -667,6 +763,84 @@ img {
         gap: 1rem;
     }
 }
+
+
+
+@media (max-width: 480px) {
+    .header-container {
+        justify-content: center;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+
+    .hero-content {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-tagline {
+        text-align: center;
+    }
+
+    .hero .btn {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .steps-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .step-line {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+
 
 .contact-form-section {
     padding: 4rem 0;
